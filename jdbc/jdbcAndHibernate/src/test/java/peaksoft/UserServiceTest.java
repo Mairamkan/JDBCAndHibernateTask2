@@ -12,9 +12,9 @@ public class UserServiceTest {
 
     private final UserService userService = new UserServiceImpl();
 
-    private final String testName = "Kanat";
-    private final String testLastName = "Subanov";
-    private final byte testAge = 23;
+    private final String testName = "Mairamkan";
+    private final String testLastName = "Madilova";
+    private final byte testAge = 38;
 
     @Test
     public void dropUsersTable() {
@@ -22,7 +22,7 @@ public class UserServiceTest {
             userService.dropUsersTable();
             userService.dropUsersTable();
         } catch (Exception e) {
-            Assert.fail("При тестировании удаления таблицы произошло исключение\n" + e);
+            Assert.fail("Testirovanie kylganda tablitsadan kata chykty\n" + e);
         }
     }
 
@@ -32,7 +32,7 @@ public class UserServiceTest {
             userService.dropUsersTable();
             userService.createUsersTable();
         } catch (Exception e) {
-            Assert.fail("При тестировании создания таблицы пользователей произошло исключение\n" + e.getMessage());
+            Assert.fail("Testirovanie kylganda tablitsadan kata chykty\n" + e.getMessage());
         }
     }
 
@@ -49,7 +49,7 @@ public class UserServiceTest {
                     || !testLastName.equals(user.getLastName())
                     || testAge != user.getAge()
             ) {
-                Assert.fail("User был некорректно добавлен в базу данных");
+                Assert.fail("User tuura emes koshulgan");
             }
 
         } catch (Exception e) {
